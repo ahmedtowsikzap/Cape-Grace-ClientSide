@@ -9,6 +9,7 @@ import Interiors from '../Interiors/Interiors';
 import TopNotch from '../TopNotch/TopNotch';
 import Discount from '../Discount/Discount';
 import CaptionCard from '../CaptionCard/CaptionCard';
+import QuestiononHome from '../Question/Question';
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
         <div className='caption'>
         <CaptionCard/>
         </div>
+        <QuestiononHome/>
   
        
         </div>
