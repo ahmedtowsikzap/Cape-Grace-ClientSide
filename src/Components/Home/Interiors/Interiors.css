@@ -1,0 +1,27 @@
+.head-styling {
+    background: linear-gradient(
+      233deg,
+      rgb(179, 121, 36) 0%,
+      rgb(162, 155, 147) 36%,
+      rgb(21, 104, 164) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .head2-styling {
+    background: rgb(255, 254, 253);
+    background: radial-gradient(
+      circle,
+      rgba(254, 136, 0, 1) 0%,
+      rgba(89, 14, 14, 0) 11%
+    );
+  }
+  
+  .head3-styling {
+    background: rgba(131, 58, 180, 0.641);
+background: linear-gradient(90deg, rgba(131, 58, 180, 0.724) 0%, rgba(253, 29, 29, 0.635) 50%, rgba(252, 176, 69, 0.717) 100%);
+  }
+  .head4-styling {
+    background: rgb(238,174,202);
+    background: linear-gradient(290deg, rgba(238,174,202,1) 0%, rgba(194,41,41,1) 100%);
+  }

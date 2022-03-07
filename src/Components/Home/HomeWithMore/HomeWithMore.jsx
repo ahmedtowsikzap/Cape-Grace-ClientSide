@@ -5,7 +5,7 @@ const HomeWithMore = () => {
   return (
     <>
       <section
-        className="slice-lg mt-5 pt-5"
+        className="slice-lg mt-5"
         style={{ fontFamily: "var(--montserrat-font)" }}
       >
         <div className="container">

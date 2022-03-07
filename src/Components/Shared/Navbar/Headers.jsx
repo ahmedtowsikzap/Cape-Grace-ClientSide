@@ -41,13 +41,7 @@ const Headers = () => {
                 About
               </Link>
             </Nav>
-            <Link className="d-lg-none" to="/home">
-              <button className="btn-regular navbar-book-btn">Book Now</button>
-            </Link>
           </Navbar.Collapse>
-          <Link className="d-none d-lg-block" to="/home">
-            <button className="btn-regular navbar-book-btn">Book Now</button>
-          </Link>
         </Container>
       </Navbar>
     </>
