@@ -1,0 +1,40 @@
+.headers-container{
+    font-family:var(--montserrat-font);
+}
+.navbar-link-custom {
+ text-decoration: none;
+ margin: 0em 1.5em;
+ color: #606060;
+ font-weight: bold;
+ transition: all 200ms;
+}
+.navbar-link-custom:hover {
+ color: var(--yellow-color);
+}
+.btn-regular {
+ background-color: var(--yellow-color);
+ border: none;
+ color: #fff;
+ padding: 0.3em 1em;
+}
+.navbar-book-btn {
+ font-weight: 700;
+ letter-spacing: 0.1em;
+ margin-left: 1em;
+}
+.nav-logo-text {
+ font-family: var(--poppins-font);
+ margin-left: 0.5em;
+ font-weight: 600;
+ font-size: 1.2em;
+ /* border: 1px solid red; */
+}
+.nav-logo-text-span {
+ color:coral;
+}
+
+.another{
+
+    color: rgba(237, 9, 112, 0.776);
+    font-size:30px;
+}
