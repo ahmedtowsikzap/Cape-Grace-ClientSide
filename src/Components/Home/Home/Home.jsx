@@ -8,6 +8,7 @@ import HomeWithMore from '../HomeWithMore/HomeWithMore';
 import Interiors from '../Interiors/Interiors';
 import TopNotch from '../TopNotch/TopNotch';
 import Discount from '../Discount/Discount';
+import CaptionCard from '../CaptionCard/CaptionCard';
 
 const Home = () => {
     return (
@@ -21,6 +22,10 @@ const Home = () => {
         <Interiors/>
         </div>
         <Discount/>
+        <div className='caption'>
+        <CaptionCard/>
+        </div>
+  
        
         </div>
     );
