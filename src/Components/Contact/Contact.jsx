@@ -58,7 +58,7 @@ const Contact = () => {
                             <Form.Check className='mt-4' label="Accept Terms and Conditions" />
                             <Row className='p-5'>
                                 <Col>
-                                    <button style={{ padding: '15px', borderRadius: '10px', fontSize: '16px' }} className="btn btn-outline-danger btn-rounded my-3 px-5" type="submit">Send Your Massege Now</button>
+                                    <button style={{ padding: '15px', borderRadius: '10px', fontSize: '16px' }} className="btn btn-outline-danger btn-rounded my-3 px-5" type="submit">Send!</button>
                                 </Col>
                             </Row>
                         </Form>

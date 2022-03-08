@@ -2,20 +2,28 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
 import Contact from './Components/Contact/Contact';
+import AuthProvider from './Context/AuthProvider/AuthProvider';
+import Login from './Components/Login/Login/Login';
+import Register from './Components/Login/Register/Register';
 
 function App() {
   return (
-    <BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
     <Routes>
 
     <Route path="/" element={<Home />} />
     <Route path="/home" element={<Home />} />
     <Route path="/contactus" element={<Contact />} />
+    <Route path="/Login" element={<Login />} />
+    <Route path="/register" element={<Register />} />
+
 
 
 
     </Routes>
     </BrowserRouter>
+    </AuthProvider>
   );
 }
 

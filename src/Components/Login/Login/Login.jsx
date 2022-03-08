@@ -65,7 +65,6 @@ const Login = () => {
                 <br />
               </Form>
               <div className="wrapper">
-                <div className="divider div-transparent div-dot"></div>
               </div>
               <div></div>
               {isLoading && <Spinner animation="border" variant="info" />}
