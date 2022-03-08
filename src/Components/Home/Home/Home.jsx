@@ -10,6 +10,8 @@ import TopNotch from '../TopNotch/TopNotch';
 import Discount from '../Discount/Discount';
 import CaptionCard from '../CaptionCard/CaptionCard';
 import QuestiononHome from '../Question/Question';
+import Partner from '../Partners/Partners';
+import Footer from '../../Shared/Footer/Footer';
 
 const Home = () => {
     return (
@@ -27,6 +29,8 @@ const Home = () => {
         <CaptionCard/>
         </div>
         <QuestiononHome/>
+        <Partner/>
+        <Footer/>
   
        
         </div>

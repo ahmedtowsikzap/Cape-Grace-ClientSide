@@ -1,11 +1,13 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./Question.css"
 
 const QuestiononHome = () => {
   return (
     <>
-      <section className="slice bg-success">
+      <section className="slice background-color">
+        <div className="mt-5">
         <div className="container">
           <div className="row align-items-center cols-xs-space cols-sm-space cols-md-space text-center text-lg-left">
             <div className="col-lg-7">
@@ -27,6 +29,7 @@ const QuestiononHome = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </>

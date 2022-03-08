@@ -16,7 +16,7 @@ const Headers = () => {
             style={{ textDecoration: "none", color: "black" }}
           >
             <div className="d-flex align-items-center">
-              <img src={logo} alt="" height="60px" />
+              <img src={logo} alt="" height="50px" />
               <p className="nav-logo-text my-0">
                 <span className="another">C</span>ape <span className="nav-logo-text-span">Grace</span>
               </p>

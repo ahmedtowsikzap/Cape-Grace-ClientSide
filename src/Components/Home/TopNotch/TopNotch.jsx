@@ -7,7 +7,7 @@ const TopNotch = () => {
     <div>
       <video src={video} autoPlay loop muted></video>
       <div className="text">
-        <h2>REACH!</h2>
+        <h2>EXPLORE!</h2>
       </div>
     </div>
   );
