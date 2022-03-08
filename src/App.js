@@ -6,6 +6,7 @@ import AuthProvider from './Context/AuthProvider/AuthProvider';
 import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
 import About from './Components/About/About';
+import HotelDetail from './Components/hotelDetail/HotelDetail';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Route path="/home" element={<Home />} />
     <Route path="/contactus" element={<Contact />} />
     <Route path="/Login" element={<Login />} />
+    <Route path="/hotel/:id" element={<HotelDetail />} />
     <Route path="/register" element={<Register />} />
     <Route path="/about" element={<About />} />
 

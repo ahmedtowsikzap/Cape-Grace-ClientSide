@@ -1,0 +1,14 @@
+.hotel-detail-container{
+    font-family: var(--montserrat-font);
+}
+.hotel-detail-container h2{
+    color: var(--yellow-color);
+
+}
+.slider {
+  width: 80%;
+  margin: 0 auto;
+}
+.slider img{
+    width: 80%;
+}
