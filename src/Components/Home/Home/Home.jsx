@@ -12,6 +12,7 @@ import CaptionCard from '../CaptionCard/CaptionCard';
 import QuestiononHome from '../Question/Question';
 import Partner from '../Partners/Partners';
 import Footer from '../../Shared/Footer/Footer';
+import Hotels from '../hotels/Hotels';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
         <HomeWithMore/>
         <Slider/>
         <HomewithAbout/>
+        <Hotels/>
         <div className='dual-tone'>
         <Interiors/>
         </div>

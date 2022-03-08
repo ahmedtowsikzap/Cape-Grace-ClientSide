@@ -60,7 +60,7 @@ const useFirebase = () => {
       if (user) {
         setUser(user);
         setAdminLoading(true);
-        fetch(`https://fierce-refuge-49185.herokuapp.com/users/${user?.email}`)
+        fetch(`https://guarded-lowlands-64841.herokuapp.com/users/${user?.email}`)
           .then((res) => res.json())
           .then((data) => setAdmin(data.admin))
           .finally(() => setAdminLoading(false));
@@ -85,7 +85,7 @@ const useFirebase = () => {
   };
   const saveUserToDB = (name, email) => {
     const user = { name, email };
-    fetch("https://fierce-refuge-49185.herokuapp.com/users", {
+    fetch("https://guarded-lowlands-64841.herokuapp.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
