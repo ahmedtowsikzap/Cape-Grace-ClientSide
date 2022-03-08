@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 
     <Route path="/" element={<Home />} />
     <Route path="/home" element={<Home />} />
+    <Route path="/contactus" element={<Contact />} />
 
 
 

@@ -1,0 +1,17 @@
+.contact-container{
+    padding: 60PX;
+    background-color: #f5f3f0;
+}
+.link-btn{
+    color: #323232;
+    text-decoration: none;
+}
+.contact-from input{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.contact-from label{
+    margin-top: 7px;
+    font-size: 17px;
+    color: #9b9797;
+}
