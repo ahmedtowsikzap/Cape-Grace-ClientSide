@@ -19,7 +19,7 @@ const Footer = () => {
                <Col lg={3} md={6} sm={12}>
                    <h3 className="footer-heading">Latest Update</h3>
                    <div className="footer-texth">
-                       <h6><FaElementor /> Solo Trip in pictures</h6>  
+                       <h6><FaElementor /> Cape Grace in pictures</h6>  
                    </div>
                    <div className="footer-texth mt-3">
                        <h6><FaElementor /> 10 Things You Should Know</h6>
