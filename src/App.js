@@ -7,6 +7,7 @@ import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
 import About from './Components/About/About';
 import HotelDetail from './Components/hotelDetail/HotelDetail';
+import MyOrder from './Components/myOrder/MyOrder';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
     <Route path="/hotel/:id" element={<HotelDetail />} />
     <Route path="/register" element={<Register />} />
     <Route path="/about" element={<About />} />
-
+    <Route path="/myorders" element={<MyOrder />} />
 
 
 
