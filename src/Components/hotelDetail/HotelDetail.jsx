@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import "./HotelDetail.css";
 import Headers from "../Shared/Navbar/Headers";
 import useAuth from "../../hooks/useAuth";
+import Footer from "../Shared/Footer/Footer";
 const HotelDetail = () => {
   const { id } = useParams();
   const { user } = useAuth();
@@ -13,7 +14,7 @@ const HotelDetail = () => {
       .then((res) => res.json())
       .then((data) => setSingleHotel(data));
   }, [id]);
-  const { hotel_name, description, heading, main_image, price } = singleHotel;
+  const { hotel_name, description,rating, perfect_for, perfect_reason, heading, main_image, price } = singleHotel;
   const onSubmit = () => {
     let newData = {
       hotel_name,
@@ -47,21 +48,27 @@ const HotelDetail = () => {
             <h3>{heading}</h3>
             <p>{description}</p>
           </Col>
-          <Col>
-            <p className="fw-bold" style={{ color: "var(--yellow-color)" }}>
-              Price: $ {price}
-            </p>
-            <button
-              className="btn-regular ms-0 mb-5 mt-3 navbar-book-btn"
+          <Col>  
+          </Col>
+        </Row>
+      </Container>
+                <div class="card text-white bg-dark mb-3 w-50 m-auto">
+                    <div class="card-header"><span className='text-warning px-1'>{perfect_for}</span></div>
+                    <div class="card-body">
+                        <h5 class="card-title"><span className='text-warning px-1'>{perfect_reason}</span></h5>
+                        <p class="card-text">Ratings: <span className='text-success'>{rating}</span></p>
+                        <p class="card-text"> Price: <span className='text-success' >${price}</span></p>
+                        <button
+              className="btn btn-outline-danger btn-rounded"
               onClick={() => {
                 onSubmit();
               }}
             >
-              Reserve
+              Reserve Now
             </button>
-          </Col>
-        </Row>
-      </Container>
+                    </div>
+                </div>
+                <Footer/>
     </>
   );
 };
