@@ -5,8 +5,10 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../../images/logo-main.png";
 import Topbar from "../Topbar/Topbar";
 import { motion } from "framer-motion";
+import useAuth from "../../../hooks/useAuth";
 
 const Headers = () => {
+  const { user } = useAuth();
   return (
     <>
       <Topbar />
@@ -44,18 +46,25 @@ const Headers = () => {
                 <Link to="/" className="navbar-link-custom">
                   Home
                 </Link>
-                <Link to="/myorders" className="navbar-link-custom">
-                  My Reserved
-                </Link>
-                <Link to="/dashboard" className="navbar-link-custom">
-                  Dashboard
-                </Link>
                 <Link to="/contactus" className="navbar-link-custom">
                   Contact
                 </Link>
                 <Link to="/about" className="navbar-link-custom">
                   About
                 </Link>
+                <Link to="/login" className="navbar-link-custom">
+                  Login
+                </Link>
+                {user?.email && (
+                  <>
+                    <Link to="/myorders" className="navbar-link-custom">
+                      My Reserved
+                    </Link>
+                    <Link to="/dashboard" className="navbar-link-custom">
+                      Dashboard
+                    </Link>
+                  </>
+                )}
               </Nav>
             </Navbar.Collapse>
           </motion.div>
