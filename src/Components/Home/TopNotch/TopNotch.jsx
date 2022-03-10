@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import video from "../../../Video/transition.mp4";
 import "./TopNotch.css";
@@ -7,7 +8,13 @@ const TopNotch = () => {
     <div>
       <video src={video} autoPlay loop muted></video>
       <div className="text">
-        <h2>EXPLORE!</h2>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, scale: 1.4 }}
+          transition={{ delay: 2.4, duration: 1.2 }}
+        >
+          EXPLORE!
+        </motion.h3>
       </div>
     </div>
   );
