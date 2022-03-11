@@ -2,7 +2,7 @@
   font-family: var(--lobster-font);
   font-weight: 500;
   font-size: 3em;
-  background: -webkit-linear-gradient(rgb(146, 230, 236), rgb(189, 166, 17));
+  background: -webkit-linear-gradient(rgb(146, 230, 236), rgb(210, 184, 19));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
