@@ -40,7 +40,7 @@ const HomewithAbout = () => {
         data-delimiter="1"
         style={{ fontFamily: "var(--montserrat-font)" }}
       >
-        <div className="container">
+        <div className="container mt-5">
           <div className="row cols-xs-space cols-sm-space align-items-center">
             <motion.div
               variants={scrollReveal2}

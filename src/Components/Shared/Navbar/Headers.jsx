@@ -38,7 +38,7 @@ const Headers = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.6, duration: 1.6 }}
+            transition={{ delay: 2.7, duration: 1.2 }}
           >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

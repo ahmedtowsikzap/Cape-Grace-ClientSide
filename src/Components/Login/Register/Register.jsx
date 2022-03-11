@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Alert,  Col, Container, Form, Row, Spinner } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Alert, Col, Container, Form, Row, Spinner } from "react-bootstrap";
 import { NavLink, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Headers from "../../Shared/Navbar/Headers";
-import "./Register.css"
+import "./Register.css";
 import Footer from "../../Shared/Footer/Footer";
 
 const Register = () => {
@@ -28,8 +28,8 @@ const Register = () => {
       <Headers></Headers>
       <Container className="p-5">
         <Row>
-          <Col lg={2}></Col>
-          <Col lg={8} sm={12} className="register-container">
+          <Col lg={3}></Col>
+          <Col lg={6} sm={12} className="register-container">
             <div className="register-form">
               <h2 className="register-text">Please Register</h2>
               {!isLoading && (
@@ -75,8 +75,7 @@ const Register = () => {
                   </Form>
                 </>
               )}
-              <div className="wrapper">
-              </div>
+              <div className="wrapper"></div>
               {isLoading && <Spinner animation="border" variant="info" />}
               {user?.email && (
                 <Alert style={{ marginTop: "10px" }} variant="success">

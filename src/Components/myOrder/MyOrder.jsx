@@ -45,7 +45,9 @@ const MyOrder = () => {
                   ></Card.Img>
                   <Card.Body className="ps-2 pe-0 pt-0">
                     <Card.Title>{myOrder.hotel_name.slice(0, 10)}</Card.Title>
-                    <small className="d-block">{myOrder.status}</small>
+                    <small className="d-block text-warning">
+                      {myOrder.status}
+                    </small>
                     <Button
                       variant="danger"
                       className=" mt-3"

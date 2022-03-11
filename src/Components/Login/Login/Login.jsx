@@ -28,15 +28,15 @@ const Login = () => {
   return (
     <>
       <Headers></Headers>
-      <Container className="p-5">
+      <Container className="p-4 mt-4">
         <Row>
-          <Col lg={2}></Col>
-          <Col lg={8} sm={12} xs={12} className="register-container">
+          <Col lg={3}></Col>
+          <Col lg={6} sm={12} xs={12} className="register-container">
             <div
               className="login-form"
               style={{ fontFamily: "var(--poppins-font)" }}
             >
-              <h2 className="login-text">Please LogIn</h2>
+              <h2 className="login-text">Log in/ Sign in</h2>
               <Form onSubmit={handleLoginSubmit}>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
@@ -58,14 +58,17 @@ const Login = () => {
                 </Form.Group>
                 <NavLink style={{ textDecoration: "none" }} to="/register">
                   <span className="link-text">New User? please Register</span>
-                </NavLink> <br />
-                <button className="lonin-btn" type="submit">
-                  LogIn
+                </NavLink>{" "}
+                <br />
+                <button
+                  className="btn btn-outline-warning btn-rounded my-3 px-5"
+                  type="submit"
+                >
+                  Log in/Sign in
                 </button>
                 <br />
               </Form>
-              <div className="wrapper">
-              </div>
+              <div className="wrapper"></div>
               <div></div>
               {isLoading && <Spinner animation="border" variant="info" />}
               {user?.email && (
@@ -73,7 +76,9 @@ const Login = () => {
                   successfuly signIn!
                 </Alert>
               )}
-              {authError && <Alert variant="danger">{authError}</Alert>}
+              {authError && (
+                <Alert variant="danger">Ay yoooo what ya tryna do?!</Alert>
+              )}
             </div>
           </Col>
           <Col lg={2}></Col>
