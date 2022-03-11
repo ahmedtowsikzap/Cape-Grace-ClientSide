@@ -1,9 +1,8 @@
 .cap {
-    font-family: var(--nunito-font);
-    font-weight: 500;
-    margin-top: 15px;
-    font-size: 3em;
-    background: -webkit-linear-gradient(rgb(33, 154, 163), rgb(189, 17, 17));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  font-family: var(--lobster-font);
+  font-weight: 500;
+  font-size: 3em;
+  background: -webkit-linear-gradient(rgb(146, 230, 236), rgb(189, 166, 17));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

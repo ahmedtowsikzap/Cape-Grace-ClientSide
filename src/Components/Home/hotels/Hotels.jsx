@@ -37,7 +37,7 @@ const Hotels = () => {
         ref={element}
         className="hotel-cards-headings"
       >
-        <h2 className="text-center mt-5 pt-5">Remarkable Hotels</h2>
+        <h2 className="text-center mt-5 pt-5 tt">Remarkable Hotels</h2>
         <p className="text-center">Checkout</p>
       </motion.div>
       <Row xs={1} lg={3} sm={1} md={2} className="g-5">

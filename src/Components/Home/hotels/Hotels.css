@@ -1,16 +1,8 @@
-/* .hotel-cards {
-    gap: 65px;
-    justify-content: center;
-  }
-  .hotel-cards-headings {
-    text-align: center;
-    margin: 100px 0 50px 0;
-    font-family: var(--nunito-font);
-  }
-  .hotel-cards-headings h2 {
-    margin-bottom: 10px;
-    font-weight: 700;
-  }
-  .hotel-cards-headings p {
-    font-size: 20px;
-  } */
+.tt {
+  font-family: var(--lobster-font);
+  font-weight: 500;
+  font-size: 3em;
+  background: -webkit-linear-gradient(rgb(255, 156, 17), rgb(189, 17, 86));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
