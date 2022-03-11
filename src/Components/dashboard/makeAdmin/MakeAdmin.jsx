@@ -28,11 +28,15 @@ const MakeAdmin = () => {
       <Headers />
       <div>
         <div>
-          <h2 className="text-center">Make Admin</h2>
+          <h2 className="text-center mt-5">Make Admin</h2>
         </div>
         <Container className="d-flex justify-content-center align-items-center mt-5">
           <form onSubmit={handleSubmit(onSubmit)} className="mt-5">
-            <input {...register("email")} className="mt-5 form-control" />
+            <input
+              placeholder="Type the email"
+              {...register("email")}
+              className="mt-5 form-control"
+            />
             <br />
             <input
               type="submit"

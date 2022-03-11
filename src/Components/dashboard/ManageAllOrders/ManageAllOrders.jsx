@@ -37,7 +37,8 @@ const ManageAllOrders = () => {
                   ></Card.Img>
                   <Card.Body className="ps-2 pe-0 pt-0">
                     <Card.Title>{hotel.hotel_name.slice(0, 10)}...</Card.Title>
-                    <small className="d-block">{hotel.status}</small>
+                    <small className="d-block text-black">{hotel.status}</small>
+                    <small className="d-block text-black">{hotel.email}</small>
                     <Button
                       variant="danger"
                       className=" mt-3"
