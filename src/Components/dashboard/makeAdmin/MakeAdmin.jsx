@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Headers from "../../Shared/Navbar/Headers";
 const MakeAdmin = () => {
   //   const { user } = useAuth();
   const { register, handleSubmit } = useForm();
@@ -23,13 +24,24 @@ const MakeAdmin = () => {
     e.preventDefault();
   };
   return (
-    <Container className="d-flex justify-content-center align-items-center mt-5">
-      <form onSubmit={handleSubmit(onSubmit)} className="mt-5">
-        <input {...register("email")} className="mt-5 form-control" />
-        <br />
-        <input type="submit" className="btn-regular navbar-book-btn  ms-0" />
-      </form>
-    </Container>
+    <>
+      <Headers />
+      <div>
+        <div>
+          <h2 className="text-center">Make Admin</h2>
+        </div>
+        <Container className="d-flex justify-content-center align-items-center mt-5">
+          <form onSubmit={handleSubmit(onSubmit)} className="mt-5">
+            <input {...register("email")} className="mt-5 form-control" />
+            <br />
+            <input
+              type="submit"
+              className="btn-regular navbar-book-btn  ms-0"
+            />
+          </form>
+        </Container>
+      </div>
+    </>
   );
 };
 

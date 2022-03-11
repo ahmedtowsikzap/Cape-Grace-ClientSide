@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Offcanvas } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Headers from "../Shared/Navbar/Headers";
 
 const Dashboard = () => {
   const [show, setShow] = useState(false);
@@ -12,6 +13,7 @@ const Dashboard = () => {
   const { logOut, admin, user } = useAuth();
   return (
     <>
+      <Headers />
       <Offcanvas
         style={{ maxWidth: "300px" }}
         show={show}
@@ -45,6 +47,11 @@ const Dashboard = () => {
             <Link to={`/dashboard/makeadmin`} className="text-decoration-none">
               <button className="btn-regular d-block my-2">
                 Make An Admin
+              </button>
+            </Link>
+            <Link to={`/dashboard/reviews`} className="text-decoration-none">
+              <button className="btn-regular d-block my-2">
+                send a Revew!
               </button>
             </Link>
           </div>
