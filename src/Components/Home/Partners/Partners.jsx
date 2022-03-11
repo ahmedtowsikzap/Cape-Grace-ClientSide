@@ -13,10 +13,10 @@ const Partner = () => {
         <div className="container">
           <div className="mb-md text-center">
             <h3 style={{ marginTop: "50px" }} className="heading h2">
-              Trusted by over <span className="text-warning">30k</span> clients
+              Trusted by over <span className="text-warning">20k</span> clients
             </h3>
             <div className="fluid-paragraph mt-3">
-              <p className="lead">Global Brands</p>
+              <p className="lead">Partenered Global Brands</p>
             </div>
           </div>
           <div className="row cols-xs-space cols-sm-space cols-md-space">
